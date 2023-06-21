@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "watch": "npx tailwindcss -i ./src/styles/tailwind-input.css -o ./src/styles/tailwind.css --watch",
+    "minify": "npx tailwindcss -i ./src/styles/tailwind-input.css -o ./src/styles/tailwind.css --minify"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
