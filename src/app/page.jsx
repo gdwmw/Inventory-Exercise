@@ -1,18 +1,17 @@
 "use client";
-
 import { useState } from "react";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 export default function Login() {
-  // const router = useRouter();
+  const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [indicator, setIndicator] = useState("");
 
   const authentication = (e) => {
     e.preventDefault();
-    if (email === "admin" && password === "123456") {
-      // router.push("/test");
+    if (email === "test@gmail.com" && password === "123456") {
+      router.push("/test");
     } else {
       setIndicator("Invalid Email or Password");
       setPassword("");
