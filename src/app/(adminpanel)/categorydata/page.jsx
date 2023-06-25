@@ -113,10 +113,10 @@ export default function UserData() {
                 <td className="px-4 py-2 text-center">{item.id}</td>
                 <td className="px-4 py-2 text-center">{item.category}</td>
                 <td className="px-4 py-2 text-center">
-                  <button className="mr-2 rounded bg-[#7367f0] px-2 py-1 text-white">
+                  <button className="mr-2 rounded bg-[#7367f0] px-2 py-1 text-white hover:bg-[#7367f0]/70">
                     Edit
                   </button>
-                  <button className="rounded bg-red-400 px-2 py-1 text-white">
+                  <button className="rounded bg-red-400 px-2 py-1 text-white hover:bg-red-400/70">
                     Delete
                   </button>
                 </td>
@@ -129,7 +129,7 @@ export default function UserData() {
             className={`mr-2 rounded px-4 py-2 ${
               currentPage === 1
                 ? "cursor-not-allowed bg-gray-300"
-                : "bg-[#7367f0] text-white"
+                : "bg-[#7367f0] text-white hover:bg-[#7367f0]/80"
             }`}
             onClick={() => changePage(currentPage - 1)}
             disabled={currentPage === 1}
@@ -143,7 +143,7 @@ export default function UserData() {
             className={`ml-2 rounded px-4 py-2 ${
               currentPage === totalPages
                 ? "cursor-not-allowed bg-gray-300"
-                : "bg-[#7367f0] text-white"
+                : "bg-[#7367f0] text-white hover:bg-[#7367f0]/80"
             }`}
             onClick={() => changePage(currentPage + 1)}
             disabled={currentPage === totalPages}
