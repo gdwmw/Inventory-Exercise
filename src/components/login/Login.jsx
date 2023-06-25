@@ -11,7 +11,7 @@ export default function Login({ getEmail, getPassword }) {
   const authentication = (e) => {
     e.preventDefault();
     if (email === getEmail && password === getPassword) {
-      router.push("/test");
+      router.push("/dashboard");
     } else {
       setIndicator("Invalid Email or Password");
       setPassword("");
