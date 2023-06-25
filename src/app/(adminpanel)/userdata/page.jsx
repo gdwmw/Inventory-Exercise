@@ -68,11 +68,19 @@ export default function UserData() {
   return (
     <main className="h-screen w-screen bg-[#25293c] py-6 pl-[340px] pr-5">
       <div className="h-full w-full overflow-scroll">
+        {/* HEADER */}
         <div className="mb-4 flex h-12 items-center">
+          {/* TITLE */}
           <p className="whitespace-nowrap text-4xl font-bold text-white">
             USER DATA
           </p>
+          {/* TITLE */}
+
+          {/* LINE */}
           <div className="mx-3 min-h-[40px] min-w-[2px] bg-white"></div>
+          {/* LINE */}
+
+          {/* SEACRH BAR */}
           <input
             type="text"
             placeholder="Search by Name or Email"
@@ -80,7 +88,11 @@ export default function UserData() {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
+          {/* SEACRH BAR */}
         </div>
+        {/* HEADER */}
+
+        {/* TABLE */}
         <table className="w-full table-fixed rounded-lg bg-white shadow-lg">
           <thead className="border-b-4 border-[#25293c]">
             <tr>
@@ -150,7 +162,11 @@ export default function UserData() {
             ))}
           </tbody>
         </table>
+        {/* TABLE */}
+
+        {/* PAGINATION */}
         <div className="mt-4 flex justify-center">
+          {/* PREVIOUS BUTTON */}
           <button
             className={`mr-2 rounded px-4 py-2 ${
               currentPage === 1
@@ -162,9 +178,15 @@ export default function UserData() {
           >
             Previous
           </button>
+          {/* PREVIOUS BUTTON */}
+
+          {/* PAGE NUMBER */}
           <span className="mx-2 rounded bg-gray-200 px-4 py-2">
             {currentPage} - {totalPages}
           </span>
+          {/* PAGE NUMBER */}
+
+          {/* NEXT BUTTON */}
           <button
             className={`ml-2 rounded px-4 py-2 ${
               currentPage === totalPages
@@ -176,7 +198,9 @@ export default function UserData() {
           >
             Next
           </button>
+          {/* NEXT BUTTON */}
         </div>
+        {/* PAGINATION */}
       </div>
     </main>
   );
