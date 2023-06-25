@@ -12,10 +12,12 @@
     "lint": "next lint",
     "watch": "npx tailwindcss -i ./src/styles/tailwind-input.css -o ./src/styles/tailwind.css --watch",
     "minify": "npx tailwindcss -i ./src/styles/tailwind-input.css -o ./src/styles/tailwind.css --minify",
-    "account": "json-server -w ./src/api/account.json -p 5000"
+    "account": "json-server -w ./src/api/account.json -p 5000",
+    "userdata": "json-server -w ./src/api/userdata.json -p 5001"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
     "next": "13.4.7",
