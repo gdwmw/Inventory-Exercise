@@ -2,9 +2,10 @@
     "account": [
       {
         "id": 1,
-        "email": "test@gmail.com",
+        "email": "gededewowahyumw@gmail.com",
         "password": "123456",
-        "role": "admin"
+        "name": "Gede Dewo Wahyu M.W",
+        "role": "Super Admin"
       }
     ]
   }
