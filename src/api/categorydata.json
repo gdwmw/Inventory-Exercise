@@ -1,0 +1,124 @@
+{
+    "categorydata": [
+        {
+            "id": 1,
+            "category": "Skin Care"
+        },
+        {
+            "id": 2,
+            "category": "Hair Care"
+        },
+        {
+            "id": 3,
+            "category": "Makeup"
+        },
+        {
+            "id": 4,
+            "category": "Fragrance"
+        },
+        {
+            "id": 5,
+            "category": "Bath & Body"
+        },
+        {
+            "id": 6,
+            "category": "Personal Care"
+        },
+        {
+            "id": 7,
+            "category": "Nail Care"
+        },
+        {
+            "id": 8,
+            "category": "Oral Care"
+        },
+        {
+            "id": 9,
+            "category": "Men's Grooming"
+        },
+        {
+            "id": 10,
+            "category": "Baby Care"
+        },
+        {
+            "id": 11,
+            "category": "Sun Care"
+        },
+        {
+            "id": 12,
+            "category": "Health & Wellness"
+        },
+        {
+            "id": 13,
+            "category": "Tools & Accessories"
+        },
+        {
+            "id": 14,
+            "category": "Gift Sets"
+        },
+        {
+            "id": 15,
+            "category": "Organic & Natural"
+        },
+        {
+            "id": 16,
+            "category": "Asian Beauty"
+        },
+        {
+            "id": 17,
+            "category": "Luxury Beauty"
+        },
+        {
+            "id": 18,
+            "category": "Dermatologist Recommended"
+        },
+        {
+            "id": 19,
+            "category": "Cruelty-Free"
+        },
+        {
+            "id": 20,
+            "category": "Vegan"
+        },
+        {
+            "id": 21,
+            "category": "Sensitive Skin"
+        },
+        {
+            "id": 22,
+            "category": "Acne Prone Skin"
+        },
+        {
+            "id": 23,
+            "category": "Anti-Aging"
+        },
+        {
+            "id": 24,
+            "category": "Dry Skin"
+        },
+        {
+            "id": 25,
+            "category": "Oily Skin"
+        },
+        {
+            "id": 26,
+            "category": "Combination Skin"
+        },
+        {
+            "id": 27,
+            "category": "Normal Skin"
+        },
+        {
+            "id": 28,
+            "category": "Mature Skin"
+        },
+        {
+            "id": 29,
+            "category": "Toning"
+        },
+        {
+            "id": 30,
+            "category": "Exfoliating"
+        }
+    ]
+}
