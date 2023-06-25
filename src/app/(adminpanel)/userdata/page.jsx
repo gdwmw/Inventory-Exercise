@@ -81,7 +81,7 @@ export default function UserData() {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
-        <table className="w-full table-auto rounded-lg bg-white shadow-lg">
+        <table className="w-full table-fixed rounded-lg bg-white shadow-lg">
           <thead className="border-b-4 border-[#25293c]">
             <tr>
               <th
