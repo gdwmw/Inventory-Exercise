@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { RiShutDownLine } from "react-icons/ri";
 import { HiHome } from "react-icons/hi";
 import { BsDatabaseFill } from "react-icons/bs";
@@ -13,6 +14,39 @@ import PageMenu from "./parts/PageMenu";
 import Menu from "./parts/Menu";
 
 export default function SidePanel() {
+  const [masterHide, setMasterHide] = useState("none");
+  const [reportHide, setReportHide] = useState("none");
+  const pathName = usePathname();
+
+  useEffect(() => {
+    if (
+      pathName === "/userdata" ||
+      pathName === "/categorydata" ||
+      pathName === "/stockdata"
+    ) {
+      setMasterHide("block");
+    }
+    if (pathName === "/stockin" || pathName === "/stockout") {
+      setReportHide("block");
+    }
+  }, [pathName]);
+
+  function masterHideHandler() {
+    if (masterHide === "none") {
+      setMasterHide("block");
+    } else {
+      setMasterHide("none");
+    }
+  }
+
+  function reportHideHandler() {
+    if (reportHide === "none") {
+      setReportHide("block");
+    } else {
+      setReportHide("none");
+    }
+  }
+
   return (
     <div className="fixed left-0 flex h-full w-80 flex-col items-center bg-[#2f3349] p-5">
       {/* TITLE */}
@@ -39,10 +73,12 @@ export default function SidePanel() {
 
         {/* DATA MASTER */}
         <Menu
+          hidden={masterHide}
+          onClick={masterHideHandler}
           icon={<BsDatabaseFill size={25} />}
           title={"Data Master"}
           subMenu={
-            <>
+            <div className="flex flex-col gap-y-3">
               <PageMenu
                 href={"/userdata"}
                 icon={<GoDotFill size={25} />}
@@ -58,17 +94,19 @@ export default function SidePanel() {
                 icon={<GoDotFill size={25} />}
                 title={"Stock Data"}
               />
-            </>
+            </div>
           }
         />
         {/* DATA MASTER */}
 
         {/* REPORT */}
         <Menu
+          hidden={reportHide}
+          onClick={reportHideHandler}
           icon={<BiSolidReport size={25} />}
           title={"Report"}
           subMenu={
-            <>
+            <div className="flex flex-col gap-y-3">
               <PageMenu
                 href={"/stockin"}
                 icon={<GoDotFill size={25} />}
@@ -79,7 +117,7 @@ export default function SidePanel() {
                 icon={<GoDotFill size={25} />}
                 title={"Stock Out"}
               />
-            </>
+            </div>
           }
         />
         {/* REPORT */}
