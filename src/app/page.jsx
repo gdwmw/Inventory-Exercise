@@ -1,20 +1,31 @@
 import React from "react";
+import axios from "axios";
 import Login from "@/components/login/Login";
 
 async function getAccount() {
-  const res = await fetch("http://localhost:5000/account", {
-    cache: "no-store",
-  });
-  return res.json();
+  try {
+    const res = await axios.get("http://localhost:5000/account", {
+      headers: { "Cache-Control": "no-cache" },
+    });
+    return res.data;
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
 }
 
 export default async function page() {
-  const accountData = await getAccount();
+  try {
+    const accountData = await getAccount();
 
-  return (
-    <Login
-      getEmail={accountData[0].email}
-      getPassword={accountData[0].password}
-    />
-  );
+    return (
+      <Login
+        getEmail={accountData[0].email}
+        getPassword={accountData[0].password}
+      />
+    );
+  } catch (error) {
+    console.error(error);
+    return null;
+  }
 }
