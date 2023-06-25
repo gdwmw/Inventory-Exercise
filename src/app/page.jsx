@@ -8,7 +8,7 @@ async function getAccount() {
   return res.json();
 }
 
-export default async function Page() {
+export default async function page() {
   const accountData = await getAccount();
 
   return (
