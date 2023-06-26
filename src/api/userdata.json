@@ -4,300 +4,350 @@
       "id": 1,
       "name": "Gede Dewo Wahyu M.W",
       "email": "gededewowahyumw@gmail.com",
+      "password": "123456",
       "role": "Super Admin"
     },
     {
       "id": 2,
       "name": "Jane Smith",
       "email": "jane.smith@example.com",
+      "password": "password2",
       "role": "Admin"
     },
     {
       "id": 3,
       "name": "Michael Johnson",
       "email": "michael.johnson@example.com",
+      "password": "password3",
       "role": "Moderator"
     },
     {
       "id": 4,
       "name": "David Williams",
       "email": "david.williams@example.com",
+      "password": "password4",
       "role": "User"
     },
     {
       "id": 5,
       "name": "Sarah Brown",
       "email": "sarah.brown@example.com",
+      "password": "password5",
       "role": "User"
     },
     {
       "id": 6,
       "name": "Robert Wilson",
       "email": "robert.wilson@example.com",
+      "password": "password6",
       "role": "User"
     },
     {
       "id": 7,
       "name": "Jennifer Davis",
       "email": "jennifer.davis@example.com",
+      "password": "password7",
       "role": "User"
     },
     {
       "id": 8,
       "name": "William Miller",
       "email": "william.miller@example.com",
+      "password": "password8",
       "role": "User"
     },
     {
       "id": 9,
       "name": "Karen Anderson",
       "email": "karen.anderson@example.com",
+      "password": "password9",
       "role": "User"
     },
     {
       "id": 10,
       "name": "Matthew Thompson",
       "email": "matthew.thompson@example.com",
+      "password": "password10",
       "role": "User"
     },
     {
       "id": 11,
       "name": "Jessica Martinez",
       "email": "jessica.martinez@example.com",
+      "password": "password11",
       "role": "User"
     },
     {
       "id": 12,
       "name": "Daniel Taylor",
       "email": "daniel.taylor@example.com",
+      "password": "password12",
       "role": "User"
     },
     {
       "id": 13,
       "name": "Lisa Thomas",
       "email": "lisa.thomas@example.com",
+      "password": "password13",
       "role": "User"
     },
     {
       "id": 14,
       "name": "Charles Garcia",
       "email": "charles.garcia@example.com",
+      "password": "password14",
       "role": "User"
     },
     {
       "id": 15,
       "name": "Ashley Robinson",
       "email": "ashley.robinson@example.com",
+      "password": "password15",
       "role": "User"
     },
     {
       "id": 16,
       "name": "Andrew Clark",
       "email": "andrew.clark@example.com",
+      "password": "password16",
       "role": "User"
     },
     {
       "id": 17,
       "name": "Maria Lewis",
       "email": "maria.lewis@example.com",
+      "password": "password17",
       "role": "User"
     },
     {
       "id": 18,
       "name": "Joseph Lee",
       "email": "joseph.lee@example.com",
+      "password": "password18",
       "role": "User"
     },
     {
       "id": 19,
       "name": "Patricia Hall",
       "email": "patricia.hall@example.com",
+      "password": "password19",
       "role": "User"
     },
     {
       "id": 20,
       "name": "Christopher Wright",
       "email": "christopher.wright@example.com",
+      "password": "password20",
       "role": "User"
     },
     {
       "id": 21,
       "name": "Elizabeth King",
       "email": "elizabeth.king@example.com",
+      "password": "password21",
       "role": "User"
     },
     {
       "id": 22,
       "name": "David Hill",
       "email": "david.hill@example.com",
+      "password": "password22",
       "role": "User"
     },
     {
       "id": 23,
       "name": "Laura Adams",
       "email": "laura.adams@example.com",
+      "password": "password23",
       "role": "User"
     },
     {
       "id": 24,
       "name": "Ryan Baker",
       "email": "ryan.baker@example.com",
+      "password": "password24",
       "role": "User"
     },
     {
       "id": 25,
       "name": "Amanda Gonzalez",
       "email": "amanda.gonzalez@example.com",
+      "password": "password25",
       "role": "User"
     },
     {
       "id": 26,
       "name": "Kevin Nelson",
       "email": "kevin.nelson@example.com",
+      "password": "password26",
       "role": "User"
     },
     {
       "id": 27,
       "name": "Hannah Carter",
       "email": "hannah.carter@example.com",
+      "password": "password27",
       "role": "User"
     },
     {
       "id": 28,
       "name": "Edward Perez",
       "email": "edward.perez@example.com",
+      "password": "password28",
       "role": "User"
     },
     {
       "id": 29,
       "name": "Samantha Wood",
       "email": "samantha.wood@example.com",
+      "password": "password29",
       "role": "User"
     },
     {
       "id": 30,
       "name": "Joshua Cook",
       "email": "joshua.cook@example.com",
+      "password": "password30",
       "role": "User"
     },
     {
       "id": 31,
       "name": "Lauren Rivera",
       "email": "lauren.rivera@example.com",
+      "password": "password31",
       "role": "User"
     },
     {
       "id": 32,
       "name": "George Green",
       "email": "george.green@example.com",
+      "password": "password32",
       "role": "User"
     },
     {
       "id": 33,
       "name": "Megan Bell",
       "email": "megan.bell@example.com",
+      "password": "password33",
       "role": "User"
     },
     {
       "id": 34,
       "name": "Nicholas Bailey",
       "email": "nicholas.bailey@example.com",
+      "password": "password34",
       "role": "User"
     },
     {
       "id": 35,
       "name": "Stephanie Ward",
       "email": "stephanie.ward@example.com",
+      "password": "password35",
       "role": "User"
     },
     {
       "id": 36,
       "name": "Richard Foster",
       "email": "richard.foster@example.com",
+      "password": "password36",
       "role": "User"
     },
     {
       "id": 37,
       "name": "Emily Cox",
       "email": "emily.cox@example.com",
+      "password": "password37",
       "role": "User"
     },
     {
       "id": 38,
       "name": "Thomas Butler",
       "email": "thomas.butler@example.com",
+      "password": "password38",
       "role": "User"
     },
     {
       "id": 39,
       "name": "Olivia Russell",
       "email": "olivia.russell@example.com",
+      "password": "password39",
       "role": "User"
     },
     {
       "id": 40,
       "name": "Benjamin Simmons",
       "email": "benjamin.simmons@example.com",
+      "password": "password40",
       "role": "User"
     },
     {
       "id": 41,
       "name": "Natalie Coleman",
       "email": "natalie.coleman@example.com",
+      "password": "password41",
       "role": "User"
     },
     {
       "id": 42,
       "name": "Samuel Ramirez",
       "email": "samuel.ramirez@example.com",
+      "password": "password42",
       "role": "User"
     },
     {
       "id": 43,
       "name": "Alyssa Morris",
       "email": "alyssa.morris@example.com",
+      "password": "password43",
       "role": "User"
     },
     {
       "id": 44,
       "name": "Jacob Watson",
       "email": "jacob.watson@example.com",
+      "password": "password44",
       "role": "User"
     },
     {
       "id": 45,
       "name": "Lillian Bell",
       "email": "lillian.bell@example.com",
+      "password": "password45",
       "role": "User"
     },
     {
       "id": 46,
       "name": "Tyler Price",
       "email": "tyler.price@example.com",
+      "password": "password46",
       "role": "User"
     },
     {
       "id": 47,
       "name": "Grace Mitchell",
       "email": "grace.mitchell@example.com",
+      "password": "password47",
       "role": "User"
     },
     {
       "id": 48,
       "name": "Jonathan Turner",
       "email": "jonathan.turner@example.com",
+      "password": "password48",
       "role": "User"
     },
     {
       "id": 49,
       "name": "Victoria Carter",
       "email": "victoria.carter@example.com",
+      "password": "password49",
       "role": "User"
     },
     {
       "id": 50,
-      "name": "Austin Coleman",
-      "email": "austin.coleman@example.com",
+      "name": "Christopher Diaz",
+      "email": "christopher.diaz@example.com",
+      "password": "password50",
       "role": "User"
     }
   ]
