@@ -13,9 +13,9 @@
     "watch": "npx tailwindcss -i ./src/styles/tailwind-input.css -o ./src/styles/tailwind.css --watch",
     "minify": "npx tailwindcss -i ./src/styles/tailwind-input.css -o ./src/styles/tailwind.css --minify",
     "account": "json-server -w ./src/api/account.json -p 5000",
-    "userdata": "json-server -w ./src/api/userdata.json -p 5000",
-    "categorydata": "json-server -w ./src/api/categorydata.json -p 5000",
-    "stockdata": "json-server -w ./src/api/stockdata.json -p 5000"
+    "userdata": "json-server -w ./src/api/userdata.json -p 5001",
+    "categorydata": "json-server -w ./src/api/categorydata.json -p 5002",
+    "stockdata": "json-server -w ./src/api/stockdata.json -p 5003"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
