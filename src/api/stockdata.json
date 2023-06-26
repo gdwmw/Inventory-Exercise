@@ -2,210 +2,210 @@
     "stockdata": [
         {
             "id": 1,
-            "product_name": "Produk 1",
+            "product": "Produk 1",
             "category": "Skin Care",
             "stock": 10,
             "price": "Rp 150.000"
         },
         {
             "id": 2,
-            "product_name": "Produk 2",
+            "product": "Produk 2",
             "category": "Hair Care",
             "stock": 15,
             "price": "Rp 120.000"
         },
         {
             "id": 3,
-            "product_name": "Produk 3",
+            "product": "Produk 3",
             "category": "Makeup",
             "stock": 8,
             "price": "Rp 180.000"
         },
         {
             "id": 4,
-            "product_name": "Produk 4",
+            "product": "Produk 4",
             "category": "Fragrance",
             "stock": 5,
             "price": "Rp 250.000"
         },
         {
             "id": 5,
-            "product_name": "Produk 5",
+            "product": "Produk 5",
             "category": "Bath & Body",
             "stock": 20,
             "price": "Rp 110.000"
         },
         {
             "id": 6,
-            "product_name": "Produk 6",
+            "product": "Produk 6",
             "category": "Personal Care",
             "stock": 12,
             "price": "Rp 130.000"
         },
         {
             "id": 7,
-            "product_name": "Produk 7",
+            "product": "Produk 7",
             "category": "Nail Care",
             "stock": 3,
             "price": "Rp 140.000"
         },
         {
             "id": 8,
-            "product_name": "Produk 8",
+            "product": "Produk 8",
             "category": "Oral Care",
             "stock": 18,
             "price": "Rp 160.000"
         },
         {
             "id": 9,
-            "product_name": "Produk 9",
+            "product": "Produk 9",
             "category": "Men's Grooming",
             "stock": 6,
             "price": "Rp 200.000"
         },
         {
             "id": 10,
-            "product_name": "Produk 10",
+            "product": "Produk 10",
             "category": "Baby Care",
             "stock": 7,
             "price": "Rp 190.000"
         },
         {
             "id": 11,
-            "product_name": "Produk 11",
+            "product": "Produk 11",
             "category": "Sun Care",
             "stock": 9,
             "price": "Rp 170.000"
         },
         {
             "id": 12,
-            "product_name": "Produk 12",
+            "product": "Produk 12",
             "category": "Health & Wellness",
             "stock": 4,
             "price": "Rp 220.000"
         },
         {
             "id": 13,
-            "product_name": "Produk 13",
+            "product": "Produk 13",
             "category": "Tools & Accessories",
             "stock": 11,
             "price": "Rp 130.000"
         },
         {
             "id": 14,
-            "product_name": "Produk 14",
+            "product": "Produk 14",
             "category": "Gift Sets",
             "stock": 2,
             "price": "Rp 300.000"
         },
         {
             "id": 15,
-            "product_name": "Produk 15",
+            "product": "Produk 15",
             "category": "Organic & Natural",
             "stock": 14,
             "price": "Rp 180.000"
         },
         {
             "id": 16,
-            "product_name": "Produk 16",
+            "product": "Produk 16",
             "category": "Asian Beauty",
             "stock": 5,
             "price": "Rp 250.000"
         },
         {
             "id": 17,
-            "product_name": "Produk 17",
+            "product": "Produk 17",
             "category": "Luxury Beauty",
             "stock": 8,
             "price": "Rp 280.000"
         },
         {
             "id": 18,
-            "product_name": "Produk 18",
+            "product": "Produk 18",
             "category": "Dermatologist Recommended",
             "stock": 6,
             "price": "Rp 190.000"
         },
         {
             "id": 19,
-            "product_name": "Produk 19",
+            "product": "Produk 19",
             "category": "Cruelty-Free",
             "stock": 3,
             "price": "Rp 210.000"
         },
         {
             "id": 20,
-            "product_name": "Produk 20",
+            "product": "Produk 20",
             "category": "Vegan",
             "stock": 9,
             "price": "Rp 230.000"
         },
         {
             "id": 21,
-            "product_name": "Produk 21",
+            "product": "Produk 21",
             "category": "Sensitive Skin",
             "stock": 7,
             "price": "Rp 180.000"
         },
         {
             "id": 22,
-            "product_name": "Produk 22",
+            "product": "Produk 22",
             "category": "Acne Prone Skin",
             "stock": 10,
             "price": "Rp 150.000"
         },
         {
             "id": 23,
-            "product_name": "Produk 23",
+            "product": "Produk 23",
             "category": "Anti-Aging",
             "stock": 12,
             "price": "Rp 170.000"
         },
         {
             "id": 24,
-            "product_name": "Produk 24",
+            "product": "Produk 24",
             "category": "Dry Skin",
             "stock": 15,
             "price": "Rp 190.000"
         },
         {
             "id": 25,
-            "product_name": "Produk 25",
+            "product": "Produk 25",
             "category": "Oily Skin",
             "stock": 8,
             "price": "Rp 210.000"
         },
         {
             "id": 26,
-            "product_name": "Produk 26",
+            "product": "Produk 26",
             "category": "Combination Skin",
             "stock": 6,
             "price": "Rp 200.000"
         },
         {
             "id": 27,
-            "product_name": "Produk 27",
+            "product": "Produk 27",
             "category": "Normal Skin",
             "stock": 9,
             "price": "Rp 220.000"
         },
         {
             "id": 28,
-            "product_name": "Produk 28",
+            "product": "Produk 28",
             "category": "Mature Skin",
             "stock": 5,
             "price": "Rp 240.000"
         },
         {
             "id": 29,
-            "product_name": "Produk 29",
+            "product": "Produk 29",
             "category": "Toning",
             "stock": 7,
             "price": "Rp 170.000"
         },
         {
             "id": 30,
-            "product_name": "Produk 30",
+            "product": "Produk 30",
             "category": "Exfoliating",
             "stock": 10,
             "price": "Rp 150.000"
