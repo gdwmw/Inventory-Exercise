@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import AddData from "./action/AddData";
-import Edit from "./action/Edit";
-import Delete from "./action/Delete";
+import AddData from "./action/adddata/AddData";
+import Edit from "./action/edit/Edit";
+import Delete from "./action/delete/Delete";
 
 const ITEMS_PER_PAGE = 10;
 
