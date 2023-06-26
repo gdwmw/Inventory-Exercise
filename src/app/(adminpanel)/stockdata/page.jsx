@@ -1,7 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { BsDatabaseFillAdd } from "react-icons/bs";
+import AddData from "./action/AddData";
+import Edit from "./action/Edit";
+import Delete from "./action/Delete";
 
 const ITEMS_PER_PAGE = 10;
 
@@ -42,7 +44,7 @@ export default function StockData() {
     }
     return userData.filter(
       (item) =>
-        item.product_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        item.product.toLowerCase().includes(searchTerm.toLowerCase()) ||
         item.category.toLowerCase().includes(searchTerm.toLowerCase())
     );
   };
@@ -84,12 +86,13 @@ export default function StockData() {
           {/* SEACRH BAR */}
           <input
             type="text"
-            placeholder="Search by Product Name or Category"
+            placeholder="Search by Product or Category"
             className="w-96 rounded-lg border p-2 outline-none"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
           {/* SEACRH BAR */}
+          <AddData />
         </div>
         {/* HEADER */}
 
@@ -110,10 +113,10 @@ export default function StockData() {
               </th>
               <th
                 className="cursor-pointer px-4 py-2"
-                onClick={() => sortData("product_name")}
+                onClick={() => sortData("product")}
               >
-                Product Name
-                {sortColumn === "product_name" && (
+                Product
+                {sortColumn === "product" && (
                   <span className="ml-1">
                     {sortDirection === "asc" ? "▲" : "▼"}
                   </span>
@@ -159,17 +162,13 @@ export default function StockData() {
             {getCurrentData().map((item) => (
               <tr key={item.id}>
                 <td className="px-4 py-2 text-center">{item.id}</td>
-                <td className="px-4 py-2 text-center">{item.product_name}</td>
+                <td className="px-4 py-2 text-center">{item.product}</td>
                 <td className="px-4 py-2 text-center">{item.category}</td>
                 <td className="px-4 py-2 text-center">{item.stock}</td>
                 <td className="px-4 py-2 text-center">{item.price}</td>
                 <td className="px-4 py-2 text-center">
-                  <button className="mr-2 select-none rounded bg-[#7367f0] px-2 py-1 text-white hover:bg-[#7367f0]/70">
-                    Edit
-                  </button>
-                  <button className="select-none rounded bg-red-400 px-2 py-1 text-white hover:bg-red-400/70">
-                    Delete
-                  </button>
+                  <Edit item={item} />
+                  <Delete item={item} />
                 </td>
               </tr>
             ))}
