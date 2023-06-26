@@ -72,7 +72,7 @@ export default function UserData() {
         {/* HEADER */}
         <div className="mb-4 flex h-12 items-center">
           {/* TITLE */}
-          <p className="whitespace-nowrap text-4xl font-bold text-white">
+          <p className="select-none whitespace-nowrap text-4xl font-bold text-white">
             USER DATA
           </p>
           {/* TITLE */}
@@ -90,14 +90,6 @@ export default function UserData() {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
           {/* SEACRH BAR */}
-
-          {/* ADD DATA */}
-          <button className="ml-auto mr-5 rounded bg-[#7367f0] px-4 py-2 hover:bg-[#7367f0]/80">
-            <span className="flex items-center justify-center text-white">
-              <BsDatabaseFillAdd size={20} className="mr-2" /> Add Data
-            </span>
-          </button>
-          {/* ADD DATA */}
         </div>
         {/* HEADER */}
 
@@ -160,10 +152,10 @@ export default function UserData() {
                 <td className="px-4 py-2 text-center">{item.email}</td>
                 <td className="px-4 py-2 text-center">{item.role}</td>
                 <td className="px-4 py-2 text-center">
-                  <button className="mr-2 rounded bg-[#7367f0] px-2 py-1 text-white hover:bg-[#7367f0]/70">
+                  <button className="mr-2 select-none rounded bg-[#7367f0] px-2 py-1 text-white hover:bg-[#7367f0]/70">
                     Edit
                   </button>
-                  <button className="rounded bg-red-400 px-2 py-1 text-white hover:bg-red-400/70">
+                  <button className="select-none rounded bg-red-400 px-2 py-1 text-white hover:bg-red-400/70">
                     Delete
                   </button>
                 </td>
@@ -177,7 +169,7 @@ export default function UserData() {
         <div className="mt-4 flex justify-center">
           {/* PREVIOUS BUTTON */}
           <button
-            className={`mr-2 rounded px-4 py-2 ${
+            className={`mr-2 select-none rounded px-4 py-2 ${
               currentPage === 1
                 ? "cursor-not-allowed bg-gray-300"
                 : "bg-[#7367f0] text-white hover:bg-[#7367f0]/80"
@@ -190,14 +182,14 @@ export default function UserData() {
           {/* PREVIOUS BUTTON */}
 
           {/* PAGE NUMBER */}
-          <span className="mx-2 rounded bg-gray-200 px-4 py-2">
+          <span className="mx-2 select-none rounded bg-gray-200 px-4 py-2">
             {currentPage} - {totalPages}
           </span>
           {/* PAGE NUMBER */}
 
           {/* NEXT BUTTON */}
           <button
-            className={`ml-2 rounded px-4 py-2 ${
+            className={`ml-2 select-none rounded px-4 py-2 ${
               currentPage === totalPages
                 ? "cursor-not-allowed bg-gray-300"
                 : "bg-[#7367f0] text-white hover:bg-[#7367f0]/80"

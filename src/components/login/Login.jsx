@@ -33,7 +33,6 @@ export default function Login({ getEmail, getPassword }) {
           <div className="relative mt-6 flex w-full flex-col justify-center text-white">
             <input
               type="email"
-              name="email"
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -42,7 +41,7 @@ export default function Login({ getEmail, getPassword }) {
             />
             <label
               htmlFor="email"
-              className="absolute -top-6 peer-focus/txtemail:text-[#7367f0]"
+              className="absolute -top-6 select-none peer-focus/txtemail:text-[#7367f0]"
             >
               Email
             </label>
@@ -53,7 +52,6 @@ export default function Login({ getEmail, getPassword }) {
           <div className="relative mt-6 flex w-full flex-col justify-center text-white">
             <input
               type="password"
-              name="password"
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -62,7 +60,7 @@ export default function Login({ getEmail, getPassword }) {
             />
             <label
               htmlFor="password"
-              className="absolute -top-6 peer-focus/txtpassword:text-[#7367f0]"
+              className="absolute -top-6 select-none peer-focus/txtpassword:text-[#7367f0]"
             >
               Password
             </label>
@@ -70,17 +68,17 @@ export default function Login({ getEmail, getPassword }) {
           {/* INPUT PASSWORD */}
 
           {/* INDICATOR */}
-          <p className="my-2 text-lg text-red-500">{indicator}</p>
+          <p className="my-2 select-none text-lg text-red-500">{indicator}</p>
           {/* INDICATOR */}
 
-          {/* SUBMIT BUTTON */}
+          {/* LOGIN BUTTON */}
           <button
             type="submit"
-            className="h-11 w-full rounded-md bg-[#7367f0] font-bold text-white hover:bg-[#7367f0]/70"
+            className="h-11 w-full select-none rounded-md bg-[#7367f0] font-bold text-white hover:bg-[#7367f0]/70"
           >
             LOGIN
           </button>
-          {/* SUBMIT BUTTON */}
+          {/* LOGIN BUTTON */}
         </form>
 
         {/* COPYRIGHT */}
