@@ -1,7 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { BsDatabaseFillAdd } from "react-icons/bs";
+import AddData from "./action/AddData";
+import Edit from "./action/Edit";
+import Delete from "./action/Delete";
 
 const ITEMS_PER_PAGE = 10;
 
@@ -90,6 +92,8 @@ export default function UserData() {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
           {/* SEACRH BAR */}
+
+          <AddData />
         </div>
         {/* HEADER */}
 
@@ -154,12 +158,8 @@ export default function UserData() {
                 <td className="px-4 py-2 text-center">{item.password}</td>
                 <td className="px-4 py-2 text-center">{item.role}</td>
                 <td className="px-4 py-2 text-center">
-                  <button className="mr-2 select-none rounded bg-[#7367f0] px-2 py-1 text-white hover:bg-[#7367f0]/70">
-                    Edit
-                  </button>
-                  <button className="select-none rounded bg-red-400 px-2 py-1 text-white hover:bg-red-400/70">
-                    Delete
-                  </button>
+                  <Edit item={item} />
+                  <Delete item={item} />
                 </td>
               </tr>
             ))}
