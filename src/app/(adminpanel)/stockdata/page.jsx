@@ -148,7 +148,7 @@ export default function StockData() {
                 className="cursor-pointer px-4 py-2"
                 onClick={() => sortData("price")}
               >
-                Price
+                Price/Unit
                 {sortColumn === "price" && (
                   <span className="ml-1">
                     {sortDirection === "asc" ? "▲" : "▼"}
