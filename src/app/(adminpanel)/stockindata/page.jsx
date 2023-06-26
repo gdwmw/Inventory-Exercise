@@ -84,7 +84,7 @@ export default function StockInData() {
           {/* SEACRH BAR */}
           <input
             type="text"
-            placeholder="Search by Product or Category"
+            placeholder="Search by Product"
             className="w-96 rounded-lg border p-2 outline-none"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
