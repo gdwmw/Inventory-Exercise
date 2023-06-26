@@ -74,19 +74,19 @@ export default function Edit({ item }) {
               id={"category"}
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              label={"category"}
+              label={"Category"}
             />
             <InputNumber
               id={"stock"}
               value={stock}
               onChange={(e) => setStock(e.target.value)}
-              label={"stock"}
+              label={"Stock"}
             />
             <InputText
               id={"price"}
               value={price}
               onChange={(e) => setPrice(e.target.value)}
-              label={"price"}
+              label={"Price"}
             />
             {/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */}
             <Buttons onClick={hideHandler} isMutating={isMutating} />
