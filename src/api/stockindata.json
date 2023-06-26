@@ -1,0 +1,12 @@
+{
+  "stockindata": [
+    {
+      "id": 1,
+      "product": "Produk 1",
+      "date": "27/05/2001",
+      "qty": 2,
+      "price": 100000,
+      "total": 200000
+    }
+  ]
+}
