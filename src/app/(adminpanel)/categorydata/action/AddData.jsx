@@ -64,6 +64,7 @@ export default function AddData() {
             </span>
           </p>
           {/* TITLE */}
+          
           <form
             className="relative mt-6 flex w-full flex-col justify-center text-black"
             onSubmit={handleSubmit}

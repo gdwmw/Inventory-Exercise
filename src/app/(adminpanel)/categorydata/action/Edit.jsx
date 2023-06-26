@@ -59,6 +59,7 @@ export default function Edit({ item }) {
             </span>
           </p>
           {/* TITLE */}
+
           <form
             className="relative mt-6 flex w-full flex-col justify-center text-black"
             onSubmit={handleEdit}

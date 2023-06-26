@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import AddData from "@/app/(adminpanel)/categorydata/action/AddData";
+import AddData from "./action/AddData";
 import Edit from "./action/Edit";
 import Delete from "./action/Delete";
 
