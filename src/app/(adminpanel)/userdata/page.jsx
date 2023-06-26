@@ -120,7 +120,7 @@ export default function UserData() {
                 )}
               </th>
               <th
-                className="cursor-pointer px-4 py-2"
+                className="w-[250px] cursor-pointer px-4 py-2"
                 onClick={() => sortData("email")}
               >
                 Email
@@ -130,6 +130,7 @@ export default function UserData() {
                   </span>
                 )}
               </th>
+              <th className="px-4 py-2">Password</th>
               <th
                 className="cursor-pointer px-4 py-2"
                 onClick={() => sortData("role")}
@@ -150,6 +151,7 @@ export default function UserData() {
                 <td className="px-4 py-2 text-center">{item.id}</td>
                 <td className="px-4 py-2 text-center">{item.name}</td>
                 <td className="px-4 py-2 text-center">{item.email}</td>
+                <td className="px-4 py-2 text-center">{item.password}</td>
                 <td className="px-4 py-2 text-center">{item.role}</td>
                 <td className="px-4 py-2 text-center">
                   <button className="mr-2 select-none rounded bg-[#7367f0] px-2 py-1 text-white hover:bg-[#7367f0]/70">
