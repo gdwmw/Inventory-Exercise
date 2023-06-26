@@ -1,7 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { BsDatabaseFillAdd } from "react-icons/bs";
+import AddData from "@/app/(adminpanel)/categorydata/action/AddData";
+import Edit from "./action/Edit";
+import Delete from "./action/Delete";
 
 const ITEMS_PER_PAGE = 10;
 
@@ -70,7 +72,7 @@ export default function CategoryData() {
         {/* HEADER */}
         <div className="mb-4 flex h-12 items-center">
           {/* TITLE */}
-          <p className="whitespace-nowrap text-4xl font-bold text-white">
+          <p className="select-none whitespace-nowrap text-4xl font-bold text-white">
             CATEGORY DATA
           </p>
           {/* TITLE */}
@@ -89,13 +91,7 @@ export default function CategoryData() {
           />
           {/* SEACRH BAR */}
 
-          {/* ADD DATA */}
-          <button className="ml-auto mr-5 rounded bg-[#7367f0] px-4 py-2 hover:bg-[#7367f0]/80">
-            <span className="flex items-center justify-center text-white">
-              <BsDatabaseFillAdd size={20} className="mr-2" /> Add Data
-            </span>
-          </button>
-          {/* ADD DATA */}
+          <AddData />
         </div>
         {/* HEADER */}
 
@@ -134,12 +130,8 @@ export default function CategoryData() {
                 <td className="px-4 py-2 text-center">{item.id}</td>
                 <td className="px-4 py-2 text-center">{item.category}</td>
                 <td className="px-4 py-2 text-center">
-                  <button className="mr-2 rounded bg-[#7367f0] px-2 py-1 text-white hover:bg-[#7367f0]/70">
-                    Edit
-                  </button>
-                  <button className="rounded bg-red-400 px-2 py-1 text-white hover:bg-red-400/70">
-                    Delete
-                  </button>
+                  <Edit item={item} />
+                  <Delete item={item} />
                 </td>
               </tr>
             ))}
@@ -151,7 +143,7 @@ export default function CategoryData() {
         <div className="mt-4 flex justify-center">
           {/* PREVIOUS BUTTON */}
           <button
-            className={`mr-2 rounded px-4 py-2 ${
+            className={`mr-2 select-none rounded px-4 py-2 ${
               currentPage === 1
                 ? "cursor-not-allowed bg-gray-300"
                 : "bg-[#7367f0] text-white hover:bg-[#7367f0]/80"
@@ -164,14 +156,14 @@ export default function CategoryData() {
           {/* PREVIOUS BUTTON */}
 
           {/* PAGE NUMBER */}
-          <span className="mx-2 rounded bg-gray-200 px-4 py-2">
+          <span className="mx-2 select-none rounded bg-gray-200 px-4 py-2">
             {currentPage} - {totalPages}
           </span>
           {/* PAGE NUMBER */}
 
           {/* NEXT BUTTON */}
           <button
-            className={`ml-2 rounded px-4 py-2 ${
+            className={`ml-2 select-none rounded px-4 py-2 ${
               currentPage === totalPages
                 ? "cursor-not-allowed bg-gray-300"
                 : "bg-[#7367f0] text-white hover:bg-[#7367f0]/80"
