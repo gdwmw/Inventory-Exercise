@@ -4,7 +4,7 @@ import axios from "axios";
 
 const ITEMS_PER_PAGE = 10;
 
-export default function UserData() {
+export default function CategoryData() {
   const [currentPage, setCurrentPage] = useState(1);
   const [sortColumn, setSortColumn] = useState("id");
   const [sortDirection, setSortDirection] = useState("asc");
