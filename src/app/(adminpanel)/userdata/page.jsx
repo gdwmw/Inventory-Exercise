@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { BsDatabaseFillAdd } from "react-icons/bs";
 
 const ITEMS_PER_PAGE = 10;
 
@@ -89,6 +90,14 @@ export default function UserData() {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
           {/* SEACRH BAR */}
+
+          {/* ADD DATA */}
+          <button className="ml-auto mr-5 rounded bg-[#7367f0] px-4 py-2 hover:bg-[#7367f0]/80">
+            <span className="flex items-center justify-center text-white">
+              <BsDatabaseFillAdd size={20} className="mr-2" /> Add Data
+            </span>
+          </button>
+          {/* ADD DATA */}
         </div>
         {/* HEADER */}
 
