@@ -82,7 +82,7 @@ export default function Edit({ item }) {
               onChange={(e) => setStock(e.target.value)}
               label={"Stock"}
             />
-            <InputText
+            <InputNumber
               id={"price"}
               value={price}
               onChange={(e) => setPrice(e.target.value)}
